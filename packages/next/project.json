@@ -20,21 +20,10 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/next:server",
-      "defaultConfiguration": "development",
+      "executor": "nx:run-commands",
       "options": {
-        "buildTarget": "next:build",
-        "dev": true
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "next:build:development",
-          "dev": true
-        },
-        "production": {
-          "buildTarget": "next:build:production",
-          "dev": false
-        }
+        "cwd":"packages/next",
+        "command": "sst bind next dev --verbose"
       }
     },
     "export": {
