@@ -1,0 +1,9 @@
+{
+    "name": "client",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "AWS_PROFILE=keelProfile sst bind vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    }
+}
