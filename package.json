@@ -3,9 +3,25 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "next:sst": "cd packages/next && sst bind next dev --verbose"
+    "next:sst": "cd packages/next && sst bind next dev --verbose",
+    "start:server": "cross-env sst dev AWS_PROFILE=keelProfile"
+
   },
   "private": true,
+  "dependencies": {
+    "@types/webpack-env": "^1.18.0",
+    "aws-cdk": "^2.73.0",
+    "aws-lambda": "^1.0.7",
+    "axios": "^1.3.5",
+    "constructs": "^10.1.309",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "dotenv-expand": "^10.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "jwk-to-pem": "^2.0.5",
+    "sst": "^2.5.2",
+    "typescript": "^5.0.4"
+  },
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
     "@expo/cli": "0.6.2",
