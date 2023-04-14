@@ -56,3 +56,18 @@ npm-debug.*
 web-build/
 cache/
 packages/mobile-e2e/artifacts
+
+# Dependency directories
+node_modules/
+
+# from sst
+/build
+.build
+.sst
+cdk.context.json
+
+.DS_Store
+
+*.tsbuildinfo
+.idea
+.vscode
