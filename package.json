@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "next:sst": "cd packages/next && sst bind next dev --verbose",
-    "start:server": "cross-env sst dev AWS_PROFILE=keelProfile"
+    "start:server": "AWS_PROFILE=keelProfile cross-env sst dev"
   },
   "private": true,
   "devDependencies": {

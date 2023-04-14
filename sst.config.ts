@@ -1,4 +1,4 @@
-import {ApiStack} from "./packages/server/stacks/ApiStack";
+import {ApiStack, WebStack} from "./packages/server/stacks";
 
 export default {
     config(input) {
@@ -9,5 +9,6 @@ export default {
     },
     stacks(app) {
         app.stack(ApiStack)
+        app.stack(WebStack)
     },
 };
