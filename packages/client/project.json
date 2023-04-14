@@ -21,20 +21,16 @@
       }
     },
     "serve": {
-      "executor": "@nrwl/vite:dev-server",
-      "defaultConfiguration": "development",
+      "executor": "nx:run-commands",
       "options": {
-        "buildTarget": "client:build"
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "client:build:development",
-          "hmr": true
-        },
-        "production": {
-          "buildTarget": "client:build:production",
-          "hmr": false
-        }
+        "cwd": "packages/client",
+        "commands": [
+          {
+            "command": "AWS_PROFILE=keelProfile sst bind vite"
+          }
+        ],
+        "buildTarget": "client:build",
+        "port": 4200
       }
     },
     "preview": {

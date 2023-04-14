@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:server": "AWS_PROFILE=keelProfile cross-env sst dev"
+    "start:client": "nx serve client",
+    "start:server": "nx serve server"
   },
   "private": true,
   "devDependencies": {
